@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>NICHOLAS WHITCUTT ARCHITECTS - Project 1</title>
+
+    <link href="assets/css/hover_pack.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-lightbox.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/colors/color-74c9be.css" rel="stylesheet">
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- JavaScripts needed at the beginning
+    ================================================== -->
+    <script type="text/javascript" src="http://alvarez.is/demo/marco/assets/js/twitterFetcher_v10_min.js"></script>
+
+    <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 11,
+
+                scrollwheel: false,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [	{		featureType:'water',		stylers:[{color:'#999984'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#f2f2f2'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#444444'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+    </script>
+
+
+    <!-- Main Jquery & Hover Effects. Should load first -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover_pack.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+      <! ========== HEADERWRAP ====================================================================================================
+  	=============================================================================================================================>
+    <div style="background-color:white;">
+        <div style="width:100%;margin:auto;text-align:center;padding:2em 0;">
+            <h1 style="font-family: verdana;font-weight: 400;letter-spacing: 7px;padding: 0.5em;color: #6a615c;">NICHOLAS WHITCUTT ARCHITECTS</h1>
+        </div>
+    </div>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+
+              <li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li>
+              <li class="active"><a href="contact.html">Contact Us <span class="sr-only">(current)</span></a></li>
+              <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Bespoke Commercial</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+
+	<! ========== PORTFOLIO SECTION =============================================================================================
+	=============================================================================================================================>
+    <div class="container">
+
+   <div id="map-container"></div>
+
+   <style>
+   #map-container { height: 300px }
+   </style>
+
+    </div><!-- /container -->
+
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-12 desc">
+                <p>
+                    18 3rd Avenue<br/>
+                    Melville<br/>
+                    Johannesburg<br/>
+                    South Africa<br/>
+                </p>
+                <p>
+                    <i class="fa fa-phone"></i>  011 482 7318<br/>
+                    <i class="fa fa-mobile"></i>  083 460 6052<br/>
+                    <a href="engineroom@nw-architects.co.za"><i class="fa fa-envelope-o"></i>  engineroom@nw-architects.co.za</a>
+                </p>
+            </div>
+        </div><!-- /row -->
+    </div><!-- /container -->
+
+    <! ========== FOOTER ========================================================================================================
+	=============================================================================================================================>
+
+	<div id="f">
+		<div class="container">
+			<div class="row">
+                <!-- LATEST POSTS -->
+                <div class="col-lg-4" style="text-align:center;">
+                </div><!-- /col-lg-3 -->
+				<!-- LOGO -->
+                <div class="col-lg-4" style="text-align:center;">
+                    <a href="index.html"><img src="assets/img/footerlogo.png" width="180"></a>
+                    <div class="footer-links">
+                    </div>
+                </div><!-- /col-lg-3 -->
+                <!-- ADDRESS -->
+                <div class="col-lg-4">
+                </div><! --/col-lg-3 -->
+			</div><! --/row -->
+		</div><!-- /container -->
+	</div><!-- /f -->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-lightbox.min.js"></script>
+    <script src="assets/js/retina.js"></script>
+
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+  	<script>
+    function init_map() {
+        var var_location = new google.maps.LatLng(-26.177950,27.999710);
+
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 14
+        };
+
+        var var_marker = new google.maps.Marker({
+            position: var_location,
+            map: var_map,
+            title:"Venice"});
+
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+
+        var_marker.setMap(var_map);
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', init_map);
+
+
+		$(window).scroll(function() {
+			$('.si').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
+
+        $(document).ready(function() {
+  $('#contact_form').bootstrapValidator({
+      // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+      feedbackIcons: {
+          valid: 'glyphicon glyphicon-ok',
+          invalid: 'glyphicon glyphicon-remove',
+          validating: 'glyphicon glyphicon-refresh'
+      },
+      fields: {
+          first_name: {
+              validators: {
+                      stringLength: {
+                      min: 2,
+                  },
+                      notEmpty: {
+                      message: 'Please supply your first name'
+                  }
+              }
+          },
+           last_name: {
+              validators: {
+                   stringLength: {
+                      min: 2,
+                  },
+                  notEmpty: {
+                      message: 'Please supply your last name'
+                  }
+              }
+          },
+          email: {
+              validators: {
+                  notEmpty: {
+                      message: 'Please supply your email address'
+                  },
+                  emailAddress: {
+                      message: 'Please supply a valid email address'
+                  }
+              }
+          },
+          phone: {
+              validators: {
+                  notEmpty: {
+                      message: 'Please supply your phone number'
+                  },
+                  phone: {
+                      country: 'US',
+                      message: 'Please supply a vaild phone number with area code'
+                  }
+              }
+          },
+          address: {
+              validators: {
+                   stringLength: {
+                      min: 8,
+                  },
+                  notEmpty: {
+                      message: 'Please supply your street address'
+                  }
+              }
+          },
+          city: {
+              validators: {
+                   stringLength: {
+                      min: 4,
+                  },
+                  notEmpty: {
+                      message: 'Please supply your city'
+                  }
+              }
+          },
+          state: {
+              validators: {
+                  notEmpty: {
+                      message: 'Please select your state'
+                  }
+              }
+          },
+          zip: {
+              validators: {
+                  notEmpty: {
+                      message: 'Please supply your zip code'
+                  },
+                  zipCode: {
+                      country: 'US',
+                      message: 'Please supply a vaild zip code'
+                  }
+              }
+          },
+          comment: {
+              validators: {
+                    stringLength: {
+                      min: 10,
+                      max: 200,
+                      message:'Please enter at least 10 characters and no more than 200'
+                  },
+                  notEmpty: {
+                      message: 'Please supply a description of your project'
+                  }
+                  }
+              }
+          }
+      })
+      .on('success.form.bv', function(e) {
+          $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+              $('#contact_form').data('bootstrapValidator').resetForm();
+
+          // Prevent form submission
+          e.preventDefault();
+
+          // Get the form instance
+          var $form = $(e.target);
+
+          // Get the BootstrapValidator instance
+          var bv = $form.data('bootstrapValidator');
+
+          // Use Ajax to submit form data
+          $.post($form.attr('action'), $form.serialize(), function(result) {
+              console.log(result);
+          }, 'json');
+      });
+});
+
+	</script>
+  </body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>NICHOLAS WHITCUTT ARCHITECTS</title>
+
+    <link href="assets/css/hover_pack.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/colors/color-74c9be.css" rel="stylesheet">
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- JavaScripts needed at the beginning
+    ================================================== -->
+    <script type="text/javascript" src="http://alvarez.is/demo/marco/assets/js/twitterFetcher_v10_min.js"></script>
+
+    <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 11,
+
+                scrollwheel: false,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [	{		featureType:'water',		stylers:[{color:'#999984'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#f2f2f2'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#444444'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+    </script>
+
+
+    <!-- Main Jquery & Hover Effects. Should load first -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover_pack.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+      <! ========== HEADERWRAP ====================================================================================================
+  	=============================================================================================================================>
+    <div style="background-color:white;">
+        <div style="width:100%;margin:auto;text-align:center;padding:2em 0;">
+            <h1 style="font-family: verdana;font-weight: 400;letter-spacing: 7px;padding: 0.5em;color: #6a615c;">NICHOLAS WHITCUTT ARCHITECTS</h1>
+        </div>
+    </div>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li class="active"><a href="projects.html">Projects <span class="sr-only">(current)</span></a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+	<! ========== PORTFOLIO SECTION =============================================================================================
+	=============================================================================================================================>
+    <div class="container">
+
+        <!--------------------------->
+        <!-- Currently in Progress -->
+        <!--------------------------->
+
+		<div class="row mt centered ">
+			<div class="col-lg-4 col-lg-offset-4">
+				<h3>Currently in Progress</h3>
+				<hr>
+			</div>
+		</div><!-- /row -->
+
+		<div class="row mt centered">
+            <div class="col-lg-4 desc">
+                <a class="b-link-fade b-animate-go" href="science-leadership-centre.html"><img width="350" src="assets/img/thumbnails/thumb_slc.jpg" alt="" />
+                    <div class="b-wrapper">
+                        <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Science Leadership Centre</h4>
+                        <p class="b-from-right b-animate b-delay03">Eco-campus in </br>the Kruger National Park</p>
+                    </div
+                </a>
+            </div>
+            <div class="col-lg-4 desc">
+                <a class="b-link-fade b-animate-go" href="mackenzie.html"><img width="350" src="assets/img/thumbnails/thumb_mackenzie.jpg" alt="" />
+                    <div class="b-wrapper">
+                        <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Mackenzie</h4>
+                        <p class="b-from-right b-animate b-delay03">Contemporary garden shelter</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 desc">
+                <a class="b-link-fade b-animate-go" href="valley-road.html"><img width="350" src="assets/img/thumbnails/thumb_valleyroad.jpg" alt="" />
+                    <div class="b-wrapper">
+                        <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">The Valley Road</h4>
+                        <p class="b-from-right b-animate b-delay03">Adding a sensitive and modern, yet timeless, expression</p>
+                    </div>
+                </a>
+            </div>
+		</div>
+        <!-- /row -->
+
+
+
+	</div><!-- /container -->
+
+	<div class="container">
+
+        <div class="row mt centered ">
+            <div class="col-lg-4 col-lg-offset-4">
+                <h3>Featured Projects</h3>
+                <hr>
+            </div>
+        </div><!-- /row -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#residential">Residential</a></li>
+            <li><a data-toggle="tab" href="#commercial">Bespoke Commercial</a></li>
+            <li><a data-toggle="tab" href="#sustainability">Sustainability</a></li>
+            <li><a data-toggle="tab" href="#conceptual">Conceptual</a></li>
+            <li><a data-toggle="tab" href="#heritage">Heritage</a></li>
+            <li><a data-toggle="tab" href="#transformations">Transformations</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="residential" class="tab-pane fade in active">
+                <h3 class="portfolio-header">Residential</h3>
+                <div class="row mt centered">
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="campbell.html"><img width="350" src="assets/img/thumbnails/thumb_campbell.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Campbell Road</h4>
+                                <p class="b-from-right b-animate b-delay03">Contemporary upgrades on a </br>Herbert Baker home</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="crescent-drive.html"><img width="350" src="assets/img/thumbnails/thumb_crescent.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Crescent Drive</h4>
+                                <p class="b-from-right b-animate b-delay03">Expressive and playful Westcliff home</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="gale-road.html"><img width="350" src="assets/img/thumbnails/thumb_gale.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Gale Road</h4>
+                                <p class="b-from-right b-animate b-delay03">Space and energy efficient renovations to existing home</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- /row -->
+                <div class="row mt centered">
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="kerry-road.html"><img width="350" src="assets/img/thumbnails/thumb_kerry.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Kerry Road</h4>
+                                <p class="b-from-right b-animate b-delay03">Contemporary new pavilion </br> of off shutter concrete</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="mackenzie.html"><img width="350" src="assets/img/thumbnails/thumb_mackenzie.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Mackenzie</h4>
+                                <p class="b-from-right b-animate b-delay03">Contemporary garden shelter</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="campbell.html"><img width="350" src="assets/img/thumbnails/thumb_valleyroad.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">The Valley Road</h4>
+                                <p class="b-from-right b-animate b-delay03">Adding a sensitive and modern, yet timeless, expression to a home</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <div id="commercial" class="tab-pane fade">
+                <h3 class="portfolio-header">Bespoke Commercial</h3>
+                <div class="row mt centered">
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="barbour.html"><img width="350" src="assets/img/thumbnails/thumb_barbour.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Barbour</h4>
+                                <p class="b-from-right b-animate b-delay03">The luxury English fashion brand's </br>first South African stores</p>
+                                <!--'-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="hertex-kramerville.html"><img width="350" src="assets/img/thumbnails/thumb_hertexk.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Hertex Kramerville</h4>
+                                <p class="b-from-right b-animate b-delay03">Complete renovation and showroom extension</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="hertex-parkhurst.html"><img width="350" src="assets/img/thumbnails/thumb_hertex.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Hertex Parkhurst</h4>
+                                <p class="b-from-right b-animate b-delay03">Contemporary fabric house showroom</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- /row -->
+            </div>
+            <div id="sustainability" class="tab-pane fade">
+                <h3 class="portfolio-header">Sustainability</h3>
+                <div class="row mt centered">
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="george-lee-park.html"><img width="350" src="assets/img/thumbnails/thumb_georgelee.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">George Lee Park</h4>
+                                <p class="b-from-right b-animate b-delay03">Lorem Ipsum has been the industry standard dummy text ever since the 1500s.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="greenhouse.html"><img width="350" src="assets/img/thumbnails/thumb_greenhouse.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Greenhouse Project</h4>
+                                <p class="b-from-right b-animate b-delay03">Sustainability project and restoration </br>of a 1939 industrial conservatory. </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="science-leadership-centre.html"><img width="350" src="assets/img/thumbnails/thumb_slc.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Science Leadership Centre</h4>
+                                <p class="b-from-right b-animate b-delay03">Eco-campus in </br>the Kruger National Park</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- /row -->
+            </div>
+            <div id="conceptual" class="tab-pane fade">
+                <h3 class="portfolio-header">Conceptual</h3>
+                <div class="row mt centered">
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="ashuvud.html"><img width="350" src="assets/img/thumbnails/thumb_ashuvud.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Welchman and Ashuvud</h4>
+                                <p class="b-from-right b-animate b-delay03">Two thatch houses on bushveld sites </br>in estates with different rules</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="maldives.html"><img width="350" src="assets/img/thumbnails/thumb_maldives.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Kizingiti</h4>
+                                <p class="b-from-right b-animate b-delay03">Remote atoll resort in the Maldives</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="malawi.html"><img width="350" src="assets/img/thumbnails/thumb_malawi.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Malawi</h4>
+                                <p class="b-from-right b-animate b-delay03">Lake Malawi resort with emphasis on sustainability</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- /row -->
+            </div>
+            <div id="heritage" class="tab-pane fade">
+                <h3 class="portfolio-header">Heritage</h3>
+                <div class="row mt centered">
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="mackenzie.html"><img width="350" src="assets/img/thumbnails/thumb_mackenzie.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Mackenzie</h4>
+                                <p class="b-from-right b-animate b-delay03">Contemporary garden shelter</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="campbell.html"><img width="350" src="assets/img/thumbnails/thumb_valleyroad.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">The Valley Road</h4>
+                                <p class="b-from-right b-animate b-delay03">Adding a sensitive and modern, yet timeless, expression to a home</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- /row -->
+            </div>
+
+            <div id="transformations" class="tab-pane fade">
+                <h3 class="portfolio-header">Transformations</h3>
+                <div class="row mt centered">
+                    <!--<div class="col-lg-4 desc">-->
+                        <!--<a class="b-link-fade b-animate-go" href="project.html"><img width="350" src="assets/img/portfolio/port02.jpg" alt="" />-->
+                            <!--<div class="b-wrapper">-->
+                                <!--<h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Khaya College</h4>-->
+                                <!--<p class="b-from-right b-animate b-delay03">View Details</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="jozi-book-fair.html"><img width="350" src="assets/img/thumbnails/thumb_khanya.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Jozi Book Fair</h4>
+                                <p class="b-from-right b-animate b-delay03">Temporary performance areas created with scaffolding</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="ridge-ollies-garden.html"><img width="350" src="assets/img/thumbnails/thumb_ridge.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Ollie’s Garden at the Ridge</h4>
+                                <p class="b-from-right b-animate b-delay03">Commemoratory primary school garden</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- /row -->
+                <div class="row mt centered">
+                    <!-- <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="project.html"><img width="350" src="assets/img/portfolio/port03.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Project 4</h4>
+                                <p class="b-from-right b-animate b-delay03">View Details</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="project.html"><img width="350" src="assets/img/portfolio/port01.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Project 5</h4>
+                                <p class="b-from-right b-animate b-delay03">View Details</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 desc">
+                        <a class="b-link-fade b-animate-go" href="project.html"><img width="350" src="assets/img/portfolio/port02.jpg" alt="" />
+                            <div class="b-wrapper">
+                                <h4 class="b-from-left b-animate b-delay03" style="margin-top:70px;">Project 6</h4>
+                                <p class="b-from-right b-animate b-delay03">View Details</p>
+                            </div>
+                        </a>
+                    </div> -->
+                </div><!-- /row -->
+            </div>
+        </div>
+
+	</div><!-- /container -->
+
+    <! ========== FOOTER ========================================================================================================
+	=============================================================================================================================>
+
+	<div id="f">
+		<div class="container">
+			<div class="row">
+                <!-- LATEST POSTS -->
+                <div class="col-lg-4" style="text-align:center;">
+                    <a href="index.html"><img src="assets/img/footerlogo.png" width="180"></a>
+                    <div class="footer-links">
+                    </div>
+                </div><!-- /col-lg-3 -->
+				<!-- ABOUT -->
+				<div class="col-lg-4">
+                    <p>
+                        <i class="fa fa-phone"></i>  011 482 7318<br/>
+                        <i class="fa fa-mobile"></i>  083 460 6052<br/>
+                        <a href="engineroom@nw-architects.co.za" style="color:white;"><i class="fa fa-envelope-o"></i>  engineroom@nw-architects.co.za</a>
+                    </p>
+				</div><!-- /col-lg-3 -->
+                <!-- ADDRESS -->
+                <div class="col-lg-4">
+                    <p>
+                        18 3rd Avenue<br/>
+                        Melville<br/>
+                        Johannesburg<br/>
+                    </p>
+                </div><! --/col-lg-3 -->
+			</div><! --/row -->
+		</div><!-- /container -->
+	</div><!-- /f -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina.js"></script>
+
+
+  	<script>
+		$(window).scroll(function() {
+			$('.si').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
+	</script>
+
+
+
+
+  </body>
+</html>
